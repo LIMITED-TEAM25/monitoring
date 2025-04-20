@@ -41,3 +41,8 @@ scrape_configs:
     metrics_path: '/actuator/prometheus'
     static_configs:
       - targets: [ 'host.docker.internal:19097' ]
+
+  - job_name: 'preuser-service-monitoring'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'host.docker.internal:19096' ]
